@@ -29,7 +29,7 @@ class PostView(APIView):
             #image_bytes = buffer.getvalue()
 
             # Return the processed image data or do something else with it
-            return Response({'processed_image': 2}, status=status.HTTP_200_OK)
+            return Response(2, status=status.HTTP_200_OK)
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
