@@ -1,0 +1,21 @@
+Sieć konwolucyjna to ustandaryzowany typ sieci neuronowej z przepływem poprzecznym, który samoistnie uczy się i wyodrębnia cechy z danych. Architektura tych sieci składa się z 
+Warstwy konwolucyjne (Convolutional Layers):
+Te warstwy zawierają zestawy filtrów (jądra konwolucyjne), które przesuwają się po wejściowej macierzy (np. obrazie) w celu wyodrębnienia cech.
+Filtry te wykrywają lokalne wzorce, takie jak krawędzie, tekstury czy kształty, co pozwala na hierarchiczną reprezentację cech obiektów na różnych poziomach abstrakcji.
+Parametry filtrów są uczonymi wagami, a operacja konwolucji przekształca dane wejściowe.
+Warstwy aktywacji (Activation Layers):
+Po każdej warstwie konwolucyjnej stosuje się funkcję aktywacji (np. ReLU), aby wprowadzić nieliniowość.
+Nieleniowość jest kluczowa do umożliwienia modelowi nauki bardziej skomplikowanych, nieliniowych wzorców.
+Warstwy poolingu (Pooling Layers):
+Warstwy poolingu pomagają zmniejszyć wymiary przestrzenne map cech, co zmniejsza liczbę parametrów i obliczeń.
+Najczęściej stosowane są operacje MaxPooling (wybór maksymalnej wartości z okna) i AveragePooling (obliczenie średniej z wartości w oknie).
+Pooling redukuje przetwarzaną ilość danych, a jednocześnie utrzymuje ważne informacje.
+Warstwy połączone (Fully Connected Layers):
+Warstwy połączone są umieszczane na końcu architektury i przekształcają dane przestrzenne na wektor, który może być użyty do klasyfikacji.
+Te warstwy wykorzystują w pełni połączone neurony, gdzie każdy neuron jest połączony z każdym neuronem poprzedniej warstwy.
+Nakładanie warstw:
+Kolejne warstwy w architekturze CNN są nakładane, co pozwala na wykrywanie coraz bardziej skomplikowanych cech w danych.
+Nakładanie warstw umożliwia hierarchiczne uczenie się reprezentacji od prostych do bardziej złożonych.
+Rozmiar warstwy (Stride):
+Rozmiar warstwy określa, o ile przesuwa się filtr konwolucyjny podczas przetwarzania danych.
+Większy krok (stride) zmniejsza wymiary przestrzenne danych wynikowych, co zwiększa ekstrakcję cech na wyższych poziomach hierarchii.
