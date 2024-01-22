@@ -1,5 +1,5 @@
 Sieć konwolucyjna to ustandaryzowany typ sieci neuronowej z przepływem poprzecznym, który samoistnie uczy się i wyodrębnia cechy z danych. Architektura tych sieci składa się z 
-Warstwy konwolucyjne (Convolutional Layers):
+Warstw konwolucyjnych (Convolutional Layers):
 Te warstwy zawierają zestawy filtrów (jądra konwolucyjne), które przesuwają się po wejściowej macierzy (np. obrazie) w celu wyodrębnienia cech.
 Filtry te wykrywają lokalne wzorce, takie jak krawędzie, tekstury czy kształty, co pozwala na hierarchiczną reprezentację cech obiektów na różnych poziomach abstrakcji.
 Parametry filtrów są uczonymi wagami, a operacja konwolucji przekształca dane wejściowe.
